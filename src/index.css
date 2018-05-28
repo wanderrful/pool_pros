@@ -1,0 +1,30 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: SSPika;
+  src: url("fonts/ss-pika.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans;
+  font-size: 15px;
+  color: #3f3f3f;;
+}
+img {
+  user-select: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}

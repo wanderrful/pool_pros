@@ -1,0 +1,1 @@
+This portfolio project was made to demonstrate some competence with front-end web development.  It was built using React and Typescript. All CSS work was done by hand.
