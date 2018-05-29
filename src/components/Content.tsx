@@ -7,9 +7,16 @@ import "./Content.css";
 
 const SearchFilter = (props: ISearchFilterProps) => (
     <div id="search_filter">
-        <p id="search_filter_headline"><b>{props.dealers} dealers in {props.zipcode}</b></p>
-        <span className="vertical_bar" />
-        <p><b>Filter Results</b></p>
+        <p id="search_filter_headline">
+            <b>{props.dealers} dealers in {props.zipcode}</b>
+        </p>
+        <span className="vertical_bar desktop_only" />
+        <p id="search_filter_title">
+            <b>Filter Results</b>
+            <div id="drop_down">
+                ▼
+            </div>
+        </p>
         <ul>
             <li>
                 <input name="service" id="service-checkbox" type="checkbox" onChange={props.handler} /><label htmlFor="service-checkbox"/> Service
