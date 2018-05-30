@@ -30,7 +30,7 @@ const SearchFilter = (props: ISearchFilterProps) => (
                 <input name="residential" id="residential-checkbox" type="checkbox" onChange={props.handler} /><label htmlFor="residential-checkbox" /> Residential
             </li>
             <li>
-                <input name="commercial" id="commercial-checkbox" type="checkbox" onChange={props.handler} /><label htmlFor="commercial-checkbox" /> Commercial <img src="assets/tool-tip-icon-filtering.png" className="icon" />
+                <input name="commercial" id="commercial-checkbox" type="checkbox" onChange={props.handler} /><label htmlFor="commercial-checkbox" /> Commercial <img src={process.env.PUBLIC_URL + "assets/tool-tip-icon-filtering.png"} className="icon" />
             </li>
         </ul>
     </div>
@@ -43,8 +43,8 @@ const SearchResult = (props: {"data": ISearchResultData}) => (
         </div>
         <hr className="desktop_only" />
         <p className="phone">
-            <img src="/assets/phone-icon-desktop.png" className="icon rounded desktop_only" />
-            <img src="/assets/phone-icon-mobile.png" className="icon mobile_only" />
+            <img src={process.env.PUBLIC_URL + "/assets/phone-icon-desktop.png"} className="icon rounded desktop_only" />
+            <img src={process.env.PUBLIC_URL + "/assets/phone-icon-mobile.png"} className="icon mobile_only" />
             <span className="mobile_only">Tap to call</span> {props.data.phone1.replace(/-/g,".")}
         </p>
 
@@ -53,7 +53,7 @@ const SearchResult = (props: {"data": ISearchResultData}) => (
         </p>
 
         <p className="contact_pro">
-            <img src="/assets/email-icon.png" className="icon" />
+            <img src={process.env.PUBLIC_URL + "/assets/email-icon.png"} className="icon" />
             Contact this Pro
         </p>
 
@@ -75,7 +75,7 @@ const SearchResult = (props: {"data": ISearchResultData}) => (
                 }
                 return (
                     <li key={`icon${i}`}>
-                        <img src={"/assets/" + filename} className="icon" /> {x}
+                        <img src={process.env.PUBLIC_URL + "/assets/" + filename} className="icon" /> {x}
                     </li>
                 );
             })}

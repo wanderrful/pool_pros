@@ -10,7 +10,7 @@ const HeaderTop = (props: {bShowMobile: boolean}) => (
     <ul>
       <li>Dealers and Distributors</li>
       <li className="logo mobile_only">|</li>
-      <li>Commercial Service <img src="/assets/action-commercial-icon.png" className="icon" /></li>
+      <li>Commercial Service <img src={process.env.PUBLIC_URL + "/assets/action-commercial-icon.png"} className="icon" /></li>
     </ul>
   </div>
 );
@@ -20,7 +20,7 @@ const Header = () => (
     <HeaderTop bShowMobile={false} />
 
     <div id="header_bottom">
-      <img src="/assets/pool-pros-logo.png" id="header_logo" />
+      <img src={process.env.PUBLIC_URL + "/assets/pool-pros-logo.png"} id="header_logo" />
 
       <ul id="header_links" className="desktop_only">
         <li><b>Pools & Spas</b></li>
@@ -30,18 +30,18 @@ const Header = () => (
       </ul>
 
       <div className="btn_find desktop_only">
-        <img src="/assets/location-icon.png" className="icon" />
+        <img src={process.env.PUBLIC_URL + "/assets/location-icon.png"} className="icon" />
         Find a Pool Pro
       </div>
       <div className="btn_find mobile_only">
-        <img src="/assets/location-icon.png" className="icon" />
+        <img src={process.env.PUBLIC_URL + "/assets/location-icon.png"} className="icon" />
         FIND A PRO
       </div>
 
-      <img src="/assets/menu-icon-mobile.png" id="settings_button" className="mobile_only" />
+      <img src={process.env.PUBLIC_URL + "/assets/menu-icon-mobile.png"} id="settings_button" className="mobile_only" />
     </div>
 
-    <img src="/assets/water-image.png" id="header_bar" />
+    <img src={process.env.PUBLIC_URL + "/assets/water-image.png"} id="header_bar" />
   </header>
 );
 
@@ -50,14 +50,14 @@ const Header = () => (
 const Footer = () => (
   <footer>
     <div id="footer_top">
-      <img src="/assets/pool-pros-logo-footer.png" id="footer_logo" />
+      <img src={process.env.PUBLIC_URL + "/assets/pool-pros-logo-footer.png"} id="footer_logo" />
 
       <div id="footer_connect">
         <b>CONNECT WITH US</b>
         <ul>
-          <li><img src="/assets/twitter-icon.png" className="icon" /></li>
-          <li><img src="/assets/facebook-icon.png" className="icon" /></li>
-          <li><img src="/assets/youtube-icon.png" className="icon" /></li>
+          <li><img src={process.env.PUBLIC_URL + "/assets/twitter-icon.png"} className="icon" /></li>
+          <li><img src={process.env.PUBLIC_URL + "/assets/facebook-icon.png"} className="icon" /></li>
+          <li><img src={process.env.PUBLIC_URL + "/assets/youtube-icon.png"} className="icon" /></li>
         </ul>
       </div>
     </div>
