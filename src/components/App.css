@@ -146,6 +146,9 @@ footer {
     max-height: 48px;
     margin-right: 10px;
   }
+  #header_bar {
+    margin-bottom: 48px;
+  }
 
   #footer_bottom hr {
     color: #ececec;
