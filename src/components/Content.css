@@ -158,20 +158,39 @@ input[type=checkbox]:checked + label {
 @media screen and (max-device-width: 414px) {
     /* Search filter */
     #search_filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         font-size: 1.2em;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
         margin: 0;
-        padding: 4px;
-        height: 330px;
+        padding: 0 18px;
+        height: 275px;
+        border-bottom: 1px solid #d8d8d8;
+        border-radius: 0;
     }
     #search_filter > * {
-        flex: 1 0 33%;
+        margin: 0;
+        align-self: stretch;
+    }
+    #search_filter_top {
+        flex: 0 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #search_filter_top p {
+        margin: 18px 0;
+        margin-bottom: 0;
+    }
+    #search_filter_top p:first-child {
+        padding: 12px 0;
     }
     #search_filter ul {
+        flex: 1 0;
         flex-direction: column;
-        padding: 8px;
+        padding: 0;
+        margin: 23px 0;
+        margin-top: 0;
     }
     #search_filter ul,
     #search_filter_title {
@@ -184,23 +203,29 @@ input[type=checkbox]:checked + label {
         padding: 0 20px;
     }
     #search_filter_headline {
-        text-align: left;
+        font-size: 0.9em;
+        margin: 0;
+        
+    }
+    #search_filter_headline b {
+        padding: 12px 0;
     }
     #search_filter_title {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    #search_filter_title > * {
-        flex: 1 0 50%;
+        flex-basis: 180px;
         font-size: 0.75em;
-        margin: 0;
-        padding: 4px;
+        margin: 0px 4px;
+        padding: 12px 0;
+    }
+    #search_filter_title b {
+        align-self: center;
+        flex-basis: 200px;
+    }
+    #search_filter_title div {
+        flex-basis: 75px;
     }
     #drop_down {
-        width: 1em;
-        padding: 6px;
+        padding: 12px 0;
         border-left: 1px solid #d8d8d8;
     }
 

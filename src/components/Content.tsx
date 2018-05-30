@@ -7,16 +7,18 @@ import "./Content.css";
 
 const SearchFilter = (props: ISearchFilterProps) => (
     <div id="search_filter">
-        <p id="search_filter_headline">
-            <b>{props.dealers} dealers in {props.zipcode}</b>
-        </p>
-        <span className="vertical_bar desktop_only" />
-        <p id="search_filter_title">
-            <b>Filter Results</b>
-            <div id="drop_down">
-                ▼
-            </div>
-        </p>
+        <div id="search_filter_top">
+            <p id="search_filter_headline">
+                <b>{props.dealers} dealers in {props.zipcode}</b>
+            </p>
+            <span className="vertical_bar desktop_only" />
+            <p id="search_filter_title">
+                <b>Filter Results</b>
+                <div id="drop_down" className="mobile_only">
+                    <object data="assets/down_arrow.svg" type="image/svg+xml" />
+                </div>
+            </p>
+        </div>
         <ul>
             <li>
                 <input name="service" id="service-checkbox" type="checkbox" onChange={props.handler} /><label htmlFor="service-checkbox"/> Service
