@@ -15,7 +15,7 @@ const SearchFilter = (props: ISearchFilterProps) => (
             <p id="search_filter_title">
                 <b>Filter Results</b>
                 <div id="drop_down" className="mobile_only">
-                    <object data="assets/down_arrow.svg" type="image/svg+xml" />
+                    <object data={process.env.PUBLIC_URL + "/assets/down_arrow.svg"} type="image/svg+xml" />
                 </div>
             </p>
         </div>
@@ -30,7 +30,7 @@ const SearchFilter = (props: ISearchFilterProps) => (
                 <input name="residential" id="residential-checkbox" type="checkbox" onChange={props.handler} /><label htmlFor="residential-checkbox" /> Residential
             </li>
             <li>
-                <input name="commercial" id="commercial-checkbox" type="checkbox" onChange={props.handler} /><label htmlFor="commercial-checkbox" /> Commercial <img src={process.env.PUBLIC_URL + "assets/tool-tip-icon-filtering.png"} className="icon" />
+                <input name="commercial" id="commercial-checkbox" type="checkbox" onChange={props.handler} /><label htmlFor="commercial-checkbox" /> Commercial <img src={process.env.PUBLIC_URL + "/assets/tool-tip-icon-filtering.png"} className="icon" />
             </li>
         </ul>
     </div>
