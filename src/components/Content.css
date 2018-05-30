@@ -216,6 +216,7 @@ input[type=checkbox]:checked + label {
         font-size: 0.75em;
         margin: 0px 4px;
         padding: 12px 0;
+        border-bottom: 0;
     }
     #search_filter_title b {
         align-self: center;
@@ -226,7 +227,12 @@ input[type=checkbox]:checked + label {
     }
     #drop_down {
         padding: 12px 0;
+        background-color: #f6f6f6;
         border-left: 1px solid #d8d8d8;
+    }
+    #drop_down object {
+        height: 9px;
+        width: 11px;
     }
 
     /* Search result */
