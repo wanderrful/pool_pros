@@ -96,6 +96,7 @@ footer {
   margin: 0px;
   padding: 0px;
 }
+#header_top .mobile_only, 
 .mobile_only {
   display: none;
 }
