@@ -64,7 +64,7 @@ const Footer = () => (
 
     <div id="footer_bottom">
         <HeaderTop bShowMobile={true} />
-        <hr />
+        <hr className="mobile_only" />
       <ul id="footer_legal">
         <li>© 2017 Pool Pros</li>
         <li className="logo">|</li>
