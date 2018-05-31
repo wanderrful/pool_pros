@@ -56,6 +56,11 @@ input[type=checkbox]:checked + label {
     height: 1em;
     vertical-align: middle;
 }
+#search_filter_top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 #search_filter_headline {
     color: #216ddf;
 }
@@ -174,7 +179,6 @@ input[type=checkbox]:checked + label {
     }
     #search_filter_top {
         flex: 0 1;
-        display: flex;
         justify-content: space-between;
         align-items: flex-end;
     }
