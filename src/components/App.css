@@ -109,7 +109,7 @@ footer {
 /* Media queries for mobile devices (414px for iPhone 6+) */
 @media screen and (max-device-width: 414px) {
   .mobile_only {
-    display: initial;
+    display: inherit;
   }
   .desktop_only {
     display: none;
